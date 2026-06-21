@@ -62,16 +62,20 @@ SOURCES: [List 1-2 key market drivers, news, catalysts, or technical levels back
         content = response.text
         action = "HOLD"
         reason = "Analysis failed to parse."
-        sources = "No specific sources provided."
+        sources = "No specific sources provided by the model."
         
-        for line in content.split('\n'):
-            if line.startswith("ACTION:"):
-                action = line.replace("ACTION:", "").strip()
-            elif line.startswith("REASON:"):
-                reason = line.replace("REASON:", "").strip()
-            elif line.startswith("SOURCES:"):
-                sources = line.replace("SOURCES:", "").strip()
-                
+        import re
+        action_match = re.search(r'ACTION:\s*([^\n]+)', content, re.IGNORECASE)
+        reason_match = re.search(r'REASON:\s*(.*?)(?=\nSOURCES:|$)', content, re.IGNORECASE | re.DOTALL)
+        sources_match = re.search(r'SOURCES:\s*(.*)', content, re.IGNORECASE | re.DOTALL)
+        
+        if action_match:
+            action = action_match.group(1).strip().replace("**", "").replace("*", "")
+        if reason_match:
+            reason = reason_match.group(1).strip().replace("**", "")
+        if sources_match:
+            sources = sources_match.group(1).strip().replace("**", "")
+            
         return action, reason, sources
     except Exception as e:
         print(f"Error analyzing {ticker}: {e}")
