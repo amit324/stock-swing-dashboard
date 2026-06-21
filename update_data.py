@@ -3,13 +3,13 @@ import json
 import datetime
 import yfinance as yf
 import requests
-import anthropic
+import google.generativeai as genai
 
 # Configuration
 TICKERS = ["AAPL", "MSFT", "GOOGL", "AMZN", "META"] # Add your preferred tickers here
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 def send_telegram_message(message):
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
@@ -20,10 +20,11 @@ def send_telegram_message(message):
     requests.post(url, json=payload)
 
 def get_ai_analysis(ticker, price, history_summary):
-    if not ANTHROPIC_API_KEY:
+    if not GEMINI_API_KEY:
         return "HOLD", "API key missing. Defaulting to HOLD."
     
-    client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+    genai.configure(api_key=GEMINI_API_KEY)
+    model = genai.GenerativeModel('gemini-1.5-flash')
     
     prompt = f"""You are a swing trading assistant. Analyze {ticker} currently at ${price:.2f}.
 Recent price history (last 5 days): {history_summary}
@@ -34,12 +35,8 @@ ACTION: [BUY/SELL/HOLD]
 REASON: [Your 1-2 sentence reason]"""
 
     try:
-        response = client.messages.create(
-            model="claude-3-haiku-20240307", # Using a fast, cheap model since Claude 3.5 Sonnet might be overkill for daily simple checks, but you can change it to claude-3-5-sonnet-20240620
-            max_tokens=150,
-            messages=[{"role": "user", "content": prompt}]
-        )
-        content = response.content[0].text
+        response = model.generate_content(prompt)
+        content = response.text
         action = "HOLD"
         reason = "Analysis failed to parse."
         
