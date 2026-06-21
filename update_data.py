@@ -4,23 +4,20 @@ import datetime
 import yfinance as yf
 import requests
 
-# Configuration
-# 1. Watchlist: You will get Telegram notifications for these if there's a BUY/SELL signal.
 try:
     with open("watchlist.json", "r") as f:
         WATCHLIST = json.load(f)
 except:
     WATCHLIST = ["AAPL", "MSFT", "GOOGL", "AMZN", "META", "MU"] 
 
-# 2. Discovery Candidates: The script will check these to find top "Trending" (biggest % gainers over 5 days) to show on the dashboard.
 TRENDING_CANDIDATES = [
     "NVDA", "AMD", "TSLA", "NFLX", "SMCI", "AVGO", "CRWD", 
     "PLTR", "ARM", "INTC", "QCOM", "SNOW", "UBER", "COIN", "HOOD", "SQ"
 ]
 
-TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+TELEGRAM_BOT_TOKEN = ***"TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+GEMINI_API_KEY = ***"GEMINI_API_KEY")
 
 def send_telegram_message(message):
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
@@ -60,22 +57,33 @@ SOURCES: [List 1-2 key market drivers, news, catalysts, or technical levels back
             raise Exception("All Gemini models failed")
             
         content = response.text
+        
+        # Clean markdown
+        content_clean = content.replace("**", "").replace("*", "")
+        
         action = "HOLD"
         reason = "Analysis failed to parse."
         sources = "No specific sources provided by the model."
         
         import re
-        action_match = re.search(r'ACTION:\s*([^\n]+)', content, re.IGNORECASE)
-        reason_match = re.search(r'REASON:\s*(.*?)(?=\nSOURCES:|$)', content, re.IGNORECASE | re.DOTALL)
-        sources_match = re.search(r'SOURCES:\s*(.*)', content, re.IGNORECASE | re.DOTALL)
+        action_match = re.search(r'ACTION:\s*([^\n]+)', content_clean, re.IGNORECASE)
+        reason_match = re.search(r'REASON:\s*(.*?)(?=\nSOURCES:|$)', content_clean, re.IGNORECASE | re.DOTALL)
+        sources_match = re.search(r'SOURCES:\s*(.*)', content_clean, re.IGNORECASE | re.DOTALL)
         
         if action_match:
-            action = action_match.group(1).strip().replace("**", "").replace("*", "")
+            action = action_match.group(1).strip()
         if reason_match:
-            reason = reason_match.group(1).strip().replace("**", "")
+            reason = reason_match.group(1).strip()
         if sources_match:
-            sources = sources_match.group(1).strip().replace("**", "")
+            sources = sources_match.group(1).strip()
             
+        # Fallback if AI omits "SOURCES:" but uses bullets
+        if "SOURCES:" not in content_clean.upper() and "-" in content_clean:
+            lines = content_clean.split("\n")
+            bullet_points = [l.strip() for l in lines if l.strip().startswith("-")]
+            if bullet_points:
+                sources = "\n".join(bullet_points)
+                
         return action, reason, sources
     except Exception as e:
         print(f"Error analyzing {ticker}: {e}")
@@ -143,13 +151,12 @@ def main():
             "history_summary": history_summary
         })
         
-    # Sort candidates by highest 5-day percentage gain
     candidate_data.sort(key=lambda x: x["pct_change"], reverse=True)
-    top_trending = candidate_data[:5] # Take top 5
+    top_trending = candidate_data[:5]
     
     for item in top_trending:
         ticker = item["ticker"]
-        action, analysis = get_ai_analysis(ticker, item["price"], item["history_summary"])
+        action, analysis, sources = get_ai_analysis(ticker, item["price"], item["history_summary"])
         dashboard_data["trending"].append({
             "ticker": ticker,
             "price": f"{item['price']:.2f}",
@@ -159,11 +166,9 @@ def main():
             "sources": sources
         })
             
-    # Save dashboard data
     with open("data.json", "w") as f:
         json.dump(dashboard_data, f, indent=2)
         
-    # Send notification if watchlist has actionable items
     if notify:
         telegram_summary += f"<a href='https://{os.environ.get('GITHUB_REPOSITORY_OWNER')}.github.io/stock-swing-dashboard/'>View Full Dashboard</a>"
         send_telegram_message(telegram_summary)
