@@ -1,35 +1,84 @@
 {
-  "last_updated": "2026-06-21 06:29:09 UTC",
-  "stocks": [
+  "last_updated": "2026-06-21 06:36:10 UTC",
+  "watchlist": [
     {
       "ticker": "AAPL",
       "price": "298.01",
+      "pct_change": "+2.36%",
       "action": "BUY",
-      "analysis": "AAPL has shown an overall upward trend over the past five days and recovered from a recent pullback, suggesting sustained bullish momentum for a multi-week swing trade."
+      "analysis": "The stock has shown a strong recovery after a minor pullback, now approaching its recent high. This indicates renewed buying interest and potential for continued upward momentum in the short to medium term."
     },
     {
       "ticker": "MSFT",
       "price": "379.40",
-      "action": "HOLD",
-      "analysis": "The stock has experienced a sharp multi-day decline, and the minor rebound on the last day is insufficient to confirm a reversal. It is prudent to wait for clearer signs of upward momentum before entering a multi-week swing trade."
+      "pct_change": "-2.90%",
+      "action": "SELL",
+      "analysis": "The stock has experienced a significant price drop in the last two days, indicating strong bearish momentum. The marginal recovery is insufficient to signal a reversal, suggesting further downside risk for a multi-week swing."
     },
     {
       "ticker": "GOOGL",
       "price": "368.03",
+      "pct_change": "+2.32%",
       "action": "HOLD",
-      "analysis": "The stock recently experienced a significant pullback from its high of $373.25, followed by only a partial recovery to $368.03. This mixed price action indicates indecision, and it is prudent to wait for a clearer trend confirmation before initiating a multi-week swing trade."
+      "analysis": "The stock has shown a strong rally followed by a significant pullback, with only a partial recovery. This indicates mixed signals and a lack of clear, sustained directional momentum for a multi-week swing trade."
     },
     {
       "ticker": "AMZN",
       "price": "244.39",
+      "pct_change": "+2.45%",
       "action": "BUY",
-      "analysis": "The stock experienced a significant pullback followed by a strong recovery, indicating buying interest at lower price levels. This suggests potential for continued upward momentum for a multi-week swing trade."
+      "analysis": "The stock demonstrated a strong rebound from its recent dip, recovering significant ground from the 06-17 low, which indicates renewed buying interest and positive momentum for a potential multi-week upward swing."
     },
     {
       "ticker": "META",
       "price": "577.22",
+      "pct_change": "+1.90%",
       "action": "HOLD",
-      "analysis": "The stock experienced a sharp drop after a rapid run-up, indicating significant volatility and profit-taking. While there was a slight rebound, it's insufficient to confirm a new sustained upward swing for a multi-week trade, making it prudent to wait for clearer direction."
+      "analysis": "The stock saw a sharp rejection from recent highs, indicating strong selling pressure, and the subsequent bounce is not yet convincing enough to signal a sustained upward trend for a multi-week swing. It's prudent to await clearer price action and confirmation of support or resistance levels."
+    },
+    {
+      "ticker": "MU",
+      "price": "1133.99",
+      "pct_change": "+15.52%",
+      "action": "BUY",
+      "analysis": "The stock shows strong upward momentum, breaking to a new 5-day high after a brief consolidation period. This recent breakout suggests potential for continued multi-week upside."
+    }
+  ],
+  "trending": [
+    {
+      "ticker": "HOOD",
+      "price": "108.15",
+      "pct_change": "+16.05%",
+      "action": "HOLD",
+      "analysis": "The stock has experienced a significant rally over the past two days, pushing it to new highs within this period. For a multi-week swing trade, it is prudent to wait for a potential consolidation or a slight pullback to establish a more favorable entry point."
+    },
+    {
+      "ticker": "ARM",
+      "price": "439.46",
+      "pct_change": "+15.40%",
+      "action": "BUY",
+      "analysis": "The stock exhibits strong upward momentum, consistently making higher highs and breaking out to new price levels. This indicates strong buying pressure likely to continue over a multi-week swing period."
+    },
+    {
+      "ticker": "AVGO",
+      "price": "411.35",
+      "pct_change": "+7.66%",
+      "action": "BUY",
+      "analysis": "The stock has shown strong bullish momentum over the last two days, closing at its highest price in the provided history, indicating a potential continuation of the upward swing."
+    },
+    {
+      "ticker": "INTC",
+      "price": "133.99",
+      "pct_change": "+7.56%",
+      "action": "BUY",
+      "analysis": "The stock has shown strong bullish momentum, surging significantly to break above recent highs after a brief dip, suggesting potential for continued upward movement in a multi-week swing trade."
+    },
+    {
+      "ticker": "QCOM",
+      "price": "226.11",
+      "pct_change": "+6.80%",
+      "action": "BUY",
+      "analysis": "The stock exhibited strong bullish momentum, breaking out of a short consolidation and reaching a new 5-day high on the most recent trading day. This signals potential for continued upward movement over a multi-week period."
     }
   ]
 }
