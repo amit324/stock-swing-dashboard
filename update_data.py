@@ -4,9 +4,16 @@ import datetime
 import yfinance as yf
 import requests
 
-
 # Configuration
-TICKERS = ["AAPL", "MSFT", "GOOGL", "AMZN", "META"] # Add your preferred tickers here
+# 1. Watchlist: You will get Telegram notifications for these if there's a BUY/SELL signal.
+WATCHLIST = ["AAPL", "MSFT", "GOOGL", "AMZN", "META", "MU"] 
+
+# 2. Discovery Candidates: The script will check these to find top "Trending" (biggest % gainers over 5 days) to show on the dashboard.
+TRENDING_CANDIDATES = [
+    "NVDA", "AMD", "TSLA", "NFLX", "SMCI", "AVGO", "CRWD", 
+    "PLTR", "ARM", "INTC", "QCOM", "SNOW", "UBER", "COIN", "HOOD", "SQ"
+]
+
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
@@ -60,51 +67,94 @@ REASON: [Your 1-2 sentence reason]"""
         return action, reason
     except Exception as e:
         print(f"Error analyzing {ticker}: {e}")
-        return "HOLD", "Error during AI analysis."
+        return "HOLD", f"Error during AI analysis: {e}"
 
 def main():
     dashboard_data = {
         "last_updated": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S UTC"),
-        "stocks": []
+        "watchlist": [],
+        "trending": []
     }
     
-    telegram_summary = "📈 <b>Daily Swing Trading Update</b>\n\n"
+    telegram_summary = "📈 <b>Watchlist Swing Update</b>\n\n"
+    notify = False
     
-    for ticker in TICKERS:
-        print(f"Processing {ticker}...")
+    # 1. Process Watchlist
+    print("Processing Watchlist...")
+    for ticker in WATCHLIST:
         stock = yf.Ticker(ticker)
         hist = stock.history(period="5d")
-        
-        if hist.empty:
+        if hist.empty or len(hist) < 2:
             continue
             
         current_price = hist['Close'].iloc[-1]
+        start_price = hist['Close'].iloc[0]
+        pct_change = ((current_price - start_price) / start_price) * 100
         history_summary = ", ".join([f"{date.strftime('%m-%d')}: ${price:.2f}" for date, price in zip(hist.index, hist['Close'])])
         
         action, analysis = get_ai_analysis(ticker, current_price, history_summary)
         
-        dashboard_data["stocks"].append({
+        dashboard_data["watchlist"].append({
             "ticker": ticker,
             "price": f"{current_price:.2f}",
+            "pct_change": f"{pct_change:+.2f}%",
             "action": action,
             "analysis": analysis
         })
         
-        # Add to telegram summary if actionable (minimize spam)
         if action in ["BUY", "SELL"]:
-            telegram_summary += f"<b>{ticker}</b>: {action} at ${current_price:.2f}\n{analysis}\n\n"
+            telegram_summary += f"<b>{ticker}</b>: {action} at ${current_price:.2f} ({pct_change:+.2f}%)\n{analysis}\n\n"
+            notify = True
+
+    # 2. Process Trending Candidates
+    print("Finding Trending Stocks...")
+    candidate_data = []
+    for ticker in TRENDING_CANDIDATES:
+        if ticker in WATCHLIST:
+            continue
+            
+        stock = yf.Ticker(ticker)
+        hist = stock.history(period="5d")
+        if hist.empty or len(hist) < 2:
+            continue
+            
+        current_price = hist['Close'].iloc[-1]
+        start_price = hist['Close'].iloc[0]
+        pct_change = ((current_price - start_price) / start_price) * 100
+        history_summary = ", ".join([f"{date.strftime('%m-%d')}: ${price:.2f}" for date, price in zip(hist.index, hist['Close'])])
+        
+        candidate_data.append({
+            "ticker": ticker,
+            "price": current_price,
+            "pct_change": pct_change,
+            "history_summary": history_summary
+        })
+        
+    # Sort candidates by highest 5-day percentage gain
+    candidate_data.sort(key=lambda x: x["pct_change"], reverse=True)
+    top_trending = candidate_data[:5] # Take top 5
+    
+    for item in top_trending:
+        ticker = item["ticker"]
+        action, analysis = get_ai_analysis(ticker, item["price"], item["history_summary"])
+        dashboard_data["trending"].append({
+            "ticker": ticker,
+            "price": f"{item['price']:.2f}",
+            "pct_change": f"{item['pct_change']:+.2f}%",
+            "action": action,
+            "analysis": analysis
+        })
             
     # Save dashboard data
     with open("data.json", "w") as f:
         json.dump(dashboard_data, f, indent=2)
         
-    # Send notification if there's anything to do
-    if "BUY" in telegram_summary or "SELL" in telegram_summary:
-        telegram_summary += f"\n<a href='https://{os.environ.get('GITHUB_REPOSITORY_OWNER')}.github.io/stock-swing-dashboard/'>View Full Dashboard</a>"
+    # Send notification if watchlist has actionable items
+    if notify:
+        telegram_summary += f"<a href='https://{os.environ.get('GITHUB_REPOSITORY_OWNER')}.github.io/stock-swing-dashboard/'>View Full Dashboard</a>"
         send_telegram_message(telegram_summary)
     else:
-        # Just to confirm it ran if everything is hold
-        send_telegram_message("📈 Daily Update: All tracked stocks are currently a HOLD. No action needed.")
+        send_telegram_message("📈 Daily Update: Watchlist stocks are all HOLD. Check the dashboard to see trending stocks!")
 
 if __name__ == "__main__":
     main()
