@@ -6,7 +6,11 @@ import requests
 
 # Configuration
 # 1. Watchlist: You will get Telegram notifications for these if there's a BUY/SELL signal.
-WATCHLIST = ["AAPL", "MSFT", "GOOGL", "AMZN", "META", "MU"] 
+try:
+    with open("watchlist.json", "r") as f:
+        WATCHLIST = json.load(f)
+except:
+    WATCHLIST = ["AAPL", "MSFT", "GOOGL", "AMZN", "META", "MU"] 
 
 # 2. Discovery Candidates: The script will check these to find top "Trending" (biggest % gainers over 5 days) to show on the dashboard.
 TRENDING_CANDIDATES = [
@@ -28,7 +32,7 @@ def send_telegram_message(message):
 
 def get_ai_analysis(ticker, price, history_summary):
     if not GEMINI_API_KEY:
-        return "HOLD", "API key missing. Defaulting to HOLD."
+        return "HOLD", "API key missing. Defaulting to HOLD.", "N/A"
     
     from google import genai
     client = genai.Client(api_key=GEMINI_API_KEY)
@@ -36,10 +40,11 @@ def get_ai_analysis(ticker, price, history_summary):
     prompt = f"""You are a swing trading assistant. Analyze {ticker} currently at ${price:.2f}.
 Recent price history (last 5 days): {history_summary}
 The user does NOT do day trading and does NOT do options. 
-Based on this simple data, provide a strict recommendation of BUY, SELL, or HOLD for a multi-week swing trade, and a 1-2 sentence justification.
+Based on this simple data, provide a strict recommendation of BUY, SELL, or HOLD for a multi-week swing trade, a justification, and the sources/catalysts.
 Format your response exactly like this:
 ACTION: [BUY/SELL/HOLD]
-REASON: [Your 1-2 sentence reason]"""
+REASON: [Your 1-2 sentence reason]
+SOURCES: [List 1-2 key market drivers, news, catalysts, or technical levels backing this]"""
 
     try:
         models_to_try = ['gemini-3.1-flash', 'gemini-3.0-flash', 'gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash-latest', 'gemini-pro']
@@ -57,17 +62,20 @@ REASON: [Your 1-2 sentence reason]"""
         content = response.text
         action = "HOLD"
         reason = "Analysis failed to parse."
+        sources = "No specific sources provided."
         
         for line in content.split('\n'):
             if line.startswith("ACTION:"):
                 action = line.replace("ACTION:", "").strip()
             elif line.startswith("REASON:"):
                 reason = line.replace("REASON:", "").strip()
+            elif line.startswith("SOURCES:"):
+                sources = line.replace("SOURCES:", "").strip()
                 
-        return action, reason
+        return action, reason, sources
     except Exception as e:
         print(f"Error analyzing {ticker}: {e}")
-        return "HOLD", f"Error during AI analysis: {e}"
+        return "HOLD", f"Error during AI analysis: {e}", "N/A"
 
 def main():
     dashboard_data = {
@@ -92,14 +100,15 @@ def main():
         pct_change = ((current_price - start_price) / start_price) * 100
         history_summary = ", ".join([f"{date.strftime('%m-%d')}: ${price:.2f}" for date, price in zip(hist.index, hist['Close'])])
         
-        action, analysis = get_ai_analysis(ticker, current_price, history_summary)
+        action, analysis, sources = get_ai_analysis(ticker, current_price, history_summary)
         
         dashboard_data["watchlist"].append({
             "ticker": ticker,
             "price": f"{current_price:.2f}",
             "pct_change": f"{pct_change:+.2f}%",
             "action": action,
-            "analysis": analysis
+            "analysis": analysis,
+            "sources": sources
         })
         
         if action in ["BUY", "SELL"]:
@@ -142,7 +151,8 @@ def main():
             "price": f"{item['price']:.2f}",
             "pct_change": f"{item['pct_change']:+.2f}%",
             "action": action,
-            "analysis": analysis
+            "analysis": analysis,
+            "sources": sources
         })
             
     # Save dashboard data

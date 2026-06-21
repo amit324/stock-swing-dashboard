@@ -5,6 +5,9 @@ on:
     # Run at 21:00 UTC (After US market close) on weekdays
     - cron: '0 21 * * 1-5'
   workflow_dispatch: # Allow manual triggers
+  push:
+    paths:
+      - 'watchlist.json' # Auto-run if the watchlist is updated
 
 jobs:
   update-dashboard:
@@ -29,9 +32,9 @@ jobs:
           
       - name: Run Analysis Script
         env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_BOT_TOKEN: *** secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY: *** secrets.GEMINI_API_KEY }}
         run: python update_data.py
         
       - name: Commit and Push changes
