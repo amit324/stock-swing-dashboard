@@ -36,7 +36,7 @@ REASON: [Your 1-2 sentence reason]"""
 
     try:
         response = client.models.generate_content(
-            model='gemini-1.5-flash',
+            model='gemini-flash',
             contents=prompt,
         )
         content = response.text
