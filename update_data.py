@@ -3,7 +3,7 @@ import json
 import datetime
 import yfinance as yf
 import requests
-import google.generativeai as genai
+
 
 # Configuration
 TICKERS = ["AAPL", "MSFT", "GOOGL", "AMZN", "META"] # Add your preferred tickers here
@@ -23,8 +23,8 @@ def get_ai_analysis(ticker, price, history_summary):
     if not GEMINI_API_KEY:
         return "HOLD", "API key missing. Defaulting to HOLD."
     
-    genai.configure(api_key=GEMINI_API_KEY)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    from google import genai
+    client = genai.Client(api_key=GEMINI_API_KEY)
     
     prompt = f"""You are a swing trading assistant. Analyze {ticker} currently at ${price:.2f}.
 Recent price history (last 5 days): {history_summary}
@@ -35,7 +35,10 @@ ACTION: [BUY/SELL/HOLD]
 REASON: [Your 1-2 sentence reason]"""
 
     try:
-        response = model.generate_content(prompt)
+        response = client.models.generate_content(
+            model='gemini-1.5-flash',
+            contents=prompt,
+        )
         content = response.text
         action = "HOLD"
         reason = "Analysis failed to parse."
