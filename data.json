@@ -1,47 +1,53 @@
 {
-  "last_updated": "2026-06-21 06:36:10 UTC",
+  "last_updated": "2026-06-21 07:04:06 UTC",
   "watchlist": [
     {
       "ticker": "AAPL",
       "price": "298.01",
       "pct_change": "+2.36%",
       "action": "BUY",
-      "analysis": "The stock has shown a strong recovery after a minor pullback, now approaching its recent high. This indicates renewed buying interest and potential for continued upward momentum in the short to medium term."
+      "analysis": "The stock has shown strong upward momentum over the last five days, consolidating slightly before recovering forcefully and now approaching its recent high, indicating renewed buying interest for a potential breakout.",
+      "sources": "Bullish price action with a strong bounce from the recent dip (06-17 low of $295.95); Potential re-test and breakout above the recent resistance level of $299.24."
     },
     {
       "ticker": "MSFT",
       "price": "379.40",
       "pct_change": "-2.90%",
-      "action": "SELL",
-      "analysis": "The stock has experienced a significant price drop in the last two days, indicating strong bearish momentum. The marginal recovery is insufficient to signal a reversal, suggesting further downside risk for a multi-week swing."
+      "action": "BUY",
+      "analysis": "The stock has experienced a significant short-term dip from recent highs, potentially entering oversold territory that offers an attractive entry point for a multi-week rebound.",
+      "sources": "1) Technical correction/profit-taking after a recent brief rally, and 2) current price levels showing early signs of potential short-term support."
     },
     {
       "ticker": "GOOGL",
       "price": "368.03",
       "pct_change": "+2.32%",
       "action": "HOLD",
-      "analysis": "The stock has shown a strong rally followed by a significant pullback, with only a partial recovery. This indicates mixed signals and a lack of clear, sustained directional momentum for a multi-week swing trade."
+      "analysis": "The stock experienced a significant rally followed by a sharp pullback and a partial recovery, indicating high volatility and a lack of clear directional momentum for a multi-week swing trade at this time.",
+      "sources": "Technical resistance at the recent high of $373.25 and potential support around the recent low of $363.79, as the price is currently consolidating within this range."
     },
     {
       "ticker": "AMZN",
       "price": "244.39",
       "pct_change": "+2.45%",
       "action": "BUY",
-      "analysis": "The stock demonstrated a strong rebound from its recent dip, recovering significant ground from the 06-17 low, which indicates renewed buying interest and positive momentum for a potential multi-week upward swing."
+      "analysis": "The stock demonstrated a strong bullish rebound from its recent low, recovering most of the prior day's significant losses and indicating renewed buying interest and upward momentum. This suggests a potential for continued appreciation towards recent highs.",
+      "sources": "Strong technical rebound off the $237.50 level, acting as a temporary support; Bullish price action indicating a potential retest of the $246 resistance level."
     },
     {
       "ticker": "META",
       "price": "577.22",
       "pct_change": "+1.90%",
       "action": "HOLD",
-      "analysis": "The stock saw a sharp rejection from recent highs, indicating strong selling pressure, and the subsequent bounce is not yet convincing enough to signal a sustained upward trend for a multi-week swing. It's prudent to await clearer price action and confirmation of support or resistance levels."
+      "analysis": "The stock experienced a sharp rejection from a multi-day high around $600, indicating significant resistance and profit-taking, followed by a minor rebound which lacks conviction for a new multi-week uptrend.",
+      "sources": "1.  Strong Resistance at $600: The rapid retreat after hitting $600.21 on 06-16 suggests this level acts as a significant ceiling for price appreciation and profit-taking.\n2.  Uncertain Short-Term Direction: The sharp drop on 06-17 followed by a modest bounce on 06-18 creates an unclear directional bias for a multi-week swing, requiring more confirmation of support or continued selling."
     },
     {
       "ticker": "MU",
       "price": "1133.99",
       "pct_change": "+15.52%",
       "action": "BUY",
-      "analysis": "The stock shows strong upward momentum, breaking to a new 5-day high after a brief consolidation period. This recent breakout suggests potential for continued multi-week upside."
+      "analysis": "The stock has demonstrated strong upward momentum, particularly in the most recent trading period, closing at a new multi-day high, indicating significant buying pressure. This strong breakout suggests potential for further appreciation over a multi-week swing trade horizon.",
+      "sources": "Strong demand for High Bandwidth Memory (HBM) driven by AI acceleration, and overall positive sentiment within the semiconductor sector."
     }
   ],
   "trending": [
@@ -49,36 +55,41 @@
       "ticker": "HOOD",
       "price": "108.15",
       "pct_change": "+16.05%",
-      "action": "HOLD",
-      "analysis": "The stock has experienced a significant rally over the past two days, pushing it to new highs within this period. For a multi-week swing trade, it is prudent to wait for a potential consolidation or a slight pullback to establish a more favorable entry point."
+      "action": "BUY",
+      "analysis": "HOOD is exhibiting strong upward momentum, with significant consecutive daily gains indicating robust buying pressure and a clear short-term bullish trend that may continue over several weeks.",
+      "sources": "1. Clear acceleration in price over the past two trading days, suggesting strong demand and potential for sustained upward movement.\n2. Technical price breakout indicated by the sharp move to new recent highs, likely attracting further momentum-based buying interest."
     },
     {
       "ticker": "ARM",
       "price": "439.46",
       "pct_change": "+15.40%",
       "action": "BUY",
-      "analysis": "The stock exhibits strong upward momentum, consistently making higher highs and breaking out to new price levels. This indicates strong buying pressure likely to continue over a multi-week swing period."
+      "analysis": "ARM has demonstrated strong upward momentum over the last two trading days, closing at a new high for the period, indicating continued bullish sentiment for a multi-week swing.",
+      "sources": "1. Strong upward price momentum with the stock closing at a new high within the recent price history. 2. Broad positive sentiment in the semiconductor and AI technology sectors, where ARM plays a foundational role."
     },
     {
       "ticker": "AVGO",
       "price": "411.35",
       "pct_change": "+7.66%",
       "action": "BUY",
-      "analysis": "The stock has shown strong bullish momentum over the last two days, closing at its highest price in the provided history, indicating a potential continuation of the upward swing."
+      "analysis": "The stock has demonstrated strong upward momentum over the last two trading days, closing at a new high for the period, indicating robust buying interest likely fueled by recent positive company news.",
+      "sources": "1. Continued positive momentum from strong Q2 FY2024 earnings report, beat expectations, and raised guidance, particularly in AI-driven custom silicon and VMware contributions. 2. The stock has shown a technical breakout above recent resistance levels, suggesting sustained buying pressure and potential for further upside."
     },
     {
       "ticker": "INTC",
       "price": "133.99",
       "pct_change": "+7.56%",
       "action": "BUY",
-      "analysis": "The stock has shown strong bullish momentum, surging significantly to break above recent highs after a brief dip, suggesting potential for continued upward movement in a multi-week swing trade."
+      "analysis": "The stock demonstrated significant bullish momentum with a strong one-day surge that broke above recent price highs, suggesting potential for continued upward movement in the short to medium term.",
+      "sources": "1. Strong upward price momentum indicating a potential breakout from recent consolidation. 2. Likely driven by positive market sentiment or a specific catalyst (e.g., analyst upgrade, company news) that fueled the sharp increase."
     },
     {
       "ticker": "QCOM",
       "price": "226.11",
       "pct_change": "+6.80%",
       "action": "BUY",
-      "analysis": "The stock exhibited strong bullish momentum, breaking out of a short consolidation and reaching a new 5-day high on the most recent trading day. This signals potential for continued upward movement over a multi-week period."
+      "analysis": "QCOM has demonstrated strong upward momentum with a significant breakout above recent resistance levels on the most recent trading day, indicating renewed buying interest after a brief consolidation. This technical strength suggests potential for further appreciation in the multi-week timeframe.",
+      "sources": "1.  Technical Breakout: The current price of $226.11 represents a decisive break above the previous 5-day high of $220.81, signaling strong bullish momentum and a potential continuation of the uptrend.\n2.  Semiconductor Sector Strength: As a key player in the semiconductor industry, QCOM benefits from the broader positive sentiment and demand in the AI and technology sectors, which often drive sustained price movements."
     }
   ]
 }
