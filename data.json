@@ -1,95 +1,95 @@
 {
-  "last_updated": "2026-06-25 22:21:01 UTC",
+  "last_updated": "2026-06-26 22:13:00 UTC",
   "watchlist": [
     {
       "ticker": "AAPL",
-      "price": "275.15",
-      "pct_change": "-7.67%",
-      "action": "SELL",
-      "analysis": "The stock has experienced a significant and rapid decline, culminating in a sharp single-day drop, indicating strong bearish momentum and a potential breakdown of key technical support. For a multi-week swing trade, entering or holding a long position under these conditions carries substantial risk of further downside.",
-      "sources": "1.  Technical Breakdown: The sharp drop from $293.08 to $275.15 suggests a breach of significant support levels, triggering increased selling pressure.\n2.  Strong Bearish Momentum: The consistent decline over the past 5 days, accelerating with the most recent price action, points to prevailing negative sentiment."
+      "price": "283.78",
+      "pct_change": "-4.45%",
+      "action": "BUY",
+      "analysis": "AAPL experienced a significant pullback on 06-25, followed by an immediate bounce back on 06-26, suggesting short-term support has been found after an oversold condition. This rebound provides a potential entry point for a multi-week swing trade expecting further recovery towards prior resistance levels.",
+      "sources": "1.  Technical Support/Rebound: The strong bounce from the $275.15 low indicates buying interest and potential short-term support established at that level.\n2.  Potential for Recovery/Gap Fill: Following such a sharp decline, there is often a tendency for the stock to attempt to recover lost ground and potentially fill the \"gap\" towards previous price ranges."
     },
     {
       "ticker": "MSFT",
-      "price": "352.83",
-      "pct_change": "-7.00%",
-      "action": "SELL",
-      "analysis": "The stock has experienced a significant and consistent decline over the past five trading days, indicating strong bearish momentum and a potential breakdown that makes it unsuitable for initiating a long multi-week swing trade at this time.",
-      "sources": "1. Price Breakdown: The sharp decline from $379.40 on 06-18 to $352.83 on 06-25 (an over 7% drop) reflects significant selling pressure.\n2. Bearish Momentum: The pattern of successively lower closes, culminating in a substantial drop on the latest day, suggests the current trend is strongly negative and likely to persist or consolidate further downward."
+      "price": "372.97",
+      "pct_change": "+1.53%",
+      "action": "BUY",
+      "analysis": "The stock demonstrated significant buying interest with a strong rebound from its recent low, suggesting a potential continuation of upward momentum for a multi-week swing.",
+      "sources": "1.  Strong Technical Rebound: The rapid recovery from $352.83 to $372.97 shows robust demand and a rejection of lower prices.\n2.  Short-term Support Confirmation: The price action implies a strong short-term support level was found around the $352-$355 range, from which the stock launched its sharp recovery."
     },
     {
       "ticker": "GOOGL",
-      "price": "343.71",
-      "pct_change": "-6.61%",
+      "price": "337.39",
+      "pct_change": "-3.51%",
       "action": "HOLD",
-      "analysis": "GOOGL has been in a clear downtrend over the past five trading days. Initiating a new long position during a strong decline without signs of stabilization or reversal is generally not recommended for swing trading.",
-      "sources": "Bearish price action/downtrend over the last 5 days. Lack of identifiable support levels from the limited price data."
+      "analysis": "GOOGL has shown a consistent and significant price decline over the past five trading days, indicating strong bearish momentum without immediate signs of stabilization. It is prudent to hold cash and observe for a clear bullish reversal or support confirmation before considering a multi-week long swing trade entry.",
+      "sources": "Consistent 5-day price decline from $349.68 to $337.39, reflecting strong bearish technical momentum; risk of attempting to 'catch a falling knife' for a long swing trade without identified support."
     },
     {
       "ticker": "AMZN",
-      "price": "227.01",
-      "pct_change": "-7.11%",
-      "action": "HOLD",
-      "analysis": "The stock has experienced a significant bearish move over the past five days, indicating strong selling pressure and a clear downtrend. Entering a long swing trade during this period of decline carries elevated risk without any clear signs of consolidation or reversal.",
-      "sources": "1. Strong Bearish Momentum: The consistent price drops, particularly from $244.39 to $232.79 and then to $227.01, demonstrate dominant selling pressure and a clear downward trend.\n2. Lack of Bullish Reversal: The provided price data shows no indication of a bottoming pattern, stabilization, or bullish reversal signals, making a long entry premature for a multi-week swing trade."
+      "price": "232.69",
+      "pct_change": "-0.04%",
+      "action": "BUY",
+      "analysis": "The stock demonstrated a strong rebound from its recent low, indicating renewed buying interest and potential for upward momentum to continue for a multi-week swing trade.",
+      "sources": "1.  Technical Rebound: The swift recovery from the $227.01 level suggests strong technical support and buyer confidence following the dip.\n2.  Positive Short-Term Momentum: The significant price recovery on 06-26, recouping most of the previous day's losses, indicates positive short-term momentum building."
     },
     {
       "ticker": "META",
-      "price": "542.87",
-      "pct_change": "-5.95%",
-      "action": "SELL",
-      "analysis": "The stock has experienced a significant and consistent decline over the past five trading days, indicating strong bearish momentum and potential further downside in the short to medium term.",
-      "sources": "1.  Strong Bearish Momentum: The price has consistently dropped from $577.22 to $542.87 in the last 5 trading days, signaling persistent selling pressure.\n2.  Breach of Support: The continuous daily losses suggest that recent short-term support levels have been broken, increasing the likelihood of further price depreciation."
+      "price": "550.25",
+      "pct_change": "-2.41%",
+      "action": "BUY",
+      "analysis": "The stock experienced a significant pullback in recent days, with the latest trading day showing a bounce from its low, indicating potential short-term support and an attractive entry point for a multi-week recovery.",
+      "sources": "1.  Technical Rebound: The price found buying interest and bounced from the $542.87 level, suggesting a potential short-term bottom after a sharp decline.\n2.  Oversold Conditions: The rapid drop from $563.85 to $542.87 likely created oversold conditions, attracting buyers looking for value at a lower price."
     },
     {
       "ticker": "MU",
-      "price": "1213.56",
-      "pct_change": "+7.02%",
+      "price": "1132.33",
+      "pct_change": "-6.53%",
       "action": "BUY",
-      "analysis": "MU has demonstrated strong bullish momentum with a significant V-shaped recovery, breaking above recent resistance levels.",
-      "sources": "1. Technical Breakout: The price closed above its previous 5-day high ($1211.38), indicating a potential continuation of upward movement. 2. Strong V-Shaped Recovery: A swift and robust bounce from recent lows suggests significant underlying buying interest."
+      "analysis": "The stock demonstrated a strong bullish reversal after finding significant support around the $1048 level, and the current price offers a pullback from that rally, providing a potential entry for an upward swing.",
+      "sources": "1.  Strong rebound from the $1048-$1050 price range on June 25th, indicating robust buying interest at that technical support level.\n2.  The significant upward movement on June 25th after a two-day decline suggests a potential shift in short-term momentum."
     }
   ],
   "trending": [
     {
-      "ticker": "SMCI",
-      "price": "31.68",
-      "pct_change": "+3.33%",
+      "ticker": "SNOW",
+      "price": "248.96",
+      "pct_change": "+9.87%",
       "action": "BUY",
-      "analysis": "The stock has experienced a significant pullback to a potential support area after a strong multi-day rally, creating an opportunity for a rebound as profit-taking subsides.",
-      "sources": "Technical retest of prior breakout level; Anticipation of renewed buying interest in the volatile AI server sector."
+      "analysis": "The significant price jump on 06-26 ($227.06 to $248.96) indicates strong bullish momentum, likely driven by a powerful catalyst that could propel the stock higher over a multi-week swing trade horizon.",
+      "sources": "NVIDIA CEO Jensen Huang's public endorsement of Snowflake; Strong positive price momentum indicating a potential breakout from recent consolidation."
     },
     {
       "ticker": "UBER",
-      "price": "72.25",
-      "pct_change": "+0.85%",
+      "price": "76.20",
+      "pct_change": "+6.68%",
       "action": "BUY",
-      "analysis": "UBER demonstrated a strong rebound from recent lows, indicating robust buying interest and potential for renewed upward momentum for a multi-week swing trade.",
-      "sources": "1.  Technical Rebound: The sharp recovery from $69.67 to $73.85 signals strong buying pressure and a potential reversal of the short-term dip.\n2.  Consolidation: The current price of $72.25 represents a slight consolidation after the rally, potentially offering an entry point before further upward movement."
-    },
-    {
-      "ticker": "INTC",
-      "price": "132.87",
-      "pct_change": "-0.84%",
-      "action": "HOLD",
-      "analysis": "The stock experienced a significant price spike quickly followed by a sharp correction, indicating a failure to sustain higher levels and a lack of clear bullish momentum for a multi-week swing trade.",
-      "sources": "Recent price rejection at the $140.94 level after the spike; subsequent strong selling pressure bringing the price back to near its starting point in this five-day period, without a definitive bullish reversal signal."
-    },
-    {
-      "ticker": "AMD",
-      "price": "532.57",
-      "pct_change": "-0.89%",
-      "action": "BUY",
-      "analysis": "The stock has demonstrated a significant rebound from a clearly established short-term support level around $519-$520, indicating a potential reversal of the recent downward price action and renewed buying interest.",
-      "sources": "1. Price holding firm around $519.74-$519.85 on 06-23 and 06-24 after a sharp decline. 2. The subsequent strong rebound to $532.57 on 06-25, suggesting buyers are stepping in at these levels."
+      "analysis": "The stock has shown strong upward momentum, with the current price breaking above all previous highs observed in the last five days.",
+      "sources": "1.  Bullish Price Momentum: The significant price increase to $76.20, establishing a new high for the period, suggests strong buying interest.\n2.  Breakout from Recent Range: The current price has moved decisively above the recent trading range, indicating potential for further upward movement."
     },
     {
       "ticker": "CRWD",
-      "price": "678.65",
-      "pct_change": "-0.91%",
+      "price": "701.09",
+      "pct_change": "+3.80%",
+      "action": "BUY",
+      "analysis": "CRWD has demonstrated strong upward momentum, with a significant price surge on the most recent day, indicating a potential technical breakout above recent resistance levels.",
+      "sources": "1.  Strong bullish momentum with the largest single-day gain in the provided period.\n2.  Technical breakout above recent price consolidation, suggesting continued upward trend."
+    },
+    {
+      "ticker": "NFLX",
+      "price": "73.81",
+      "pct_change": "+1.28%",
+      "action": "BUY",
+      "analysis": "The stock experienced a strong bullish rebound today, recovering prior losses and signaling a potential shift in short-term momentum for a multi-week swing.",
+      "sources": "Significant bullish price action today (06-26) indicating strong buying pressure and a potential technical reversal from recent lows; renewed investor interest driving positive sentiment."
+    },
+    {
+      "ticker": "AMD",
+      "price": "521.58",
+      "pct_change": "-5.45%",
       "action": "HOLD",
-      "analysis": "The recent price history shows a decline followed by a modest rebound from a 5-day low, indicating mixed short-term signals that lack clear directional conviction for a multi-week swing trade.",
-      "sources": "Price dropped from $684.86 (06-18) to $673.02 (06-24), then saw a limited recovery to $678.65 (06-25), suggesting uncertainty in trend continuation."
+      "analysis": "The stock experienced a significant drop and, despite a rebound attempt, failed to hold its gains, pulling back close to its recent lows, indicating a lack of sustained bullish momentum for a multi-week upward swing.",
+      "sources": "1.  Failed Rebound: The price rebounded from $519.74 to $532.57 but quickly retraced to $521.58, indicating selling pressure preventing sustained upward movement.\n2.  Proximity to Recent Lows: The current price of $521.58 is near the 5-day low of $519.74, suggesting continued weakness or consolidation without a clear bullish reversal signal."
     }
   ]
 }
