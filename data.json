@@ -1,95 +1,95 @@
 {
-  "last_updated": "2026-07-14 21:57:03 UTC",
+  "last_updated": "2026-07-15 21:59:43 UTC",
   "watchlist": [
     {
       "ticker": "AAPL",
-      "price": "314.86",
-      "pct_change": "+0.47%",
-      "action": "HOLD",
-      "analysis": "The recent 5-day price history shows mixed signals with a modest overall gain but a notable pullback from its peak on the last trading day, lacking clear directional conviction for a multi-week swing trade.",
-      "sources": "The stock's price increased from $313.39 to $317.31 (07-08 to 07-13) followed by a significant decline to $314.86 (07-14), indicating short-term indecision rather than a clear trend for multi-week entry or exit."
+      "price": "327.50",
+      "pct_change": "+3.57%",
+      "action": "BUY",
+      "analysis": "AAPL demonstrated a significant bullish breakout on the last trading day, moving decisively above its recent consolidation range, indicating strong upward momentum for a multi-week swing trade.",
+      "sources": "Technical breakout from a defined trading range; generally positive market sentiment for leading technology stocks."
     },
     {
       "ticker": "MSFT",
-      "price": "384.93",
-      "pct_change": "+0.41%",
-      "action": "HOLD",
-      "analysis": "The stock saw a strong rejection after attempting to break higher at $390.99, immediately retracing all its gains. This indicates a lack of sustained bullish momentum and immediate resistance for a multi-week upward swing.",
-      "sources": "Technical resistance at $390.99; failed breakout pattern suggesting indecision or downward pressure."
+      "price": "395.63",
+      "pct_change": "+2.93%",
+      "action": "BUY",
+      "analysis": "The stock experienced a significant rebound on the last day, closing at a new 5-day high and breaking above recent resistance levels, indicating strong bullish momentum. This suggests a potential continuation of an upward trend in the near term.",
+      "sources": "Technical breakout above prior resistance levels; strong buying interest demonstrated by the significant daily gain and close at the high of the provided period."
     },
     {
       "ticker": "GOOGL",
-      "price": "359.51",
-      "pct_change": "-0.67%",
+      "price": "370.92",
+      "pct_change": "+3.35%",
       "action": "BUY",
-      "analysis": "The stock demonstrated a strong rebound from its recent low on 07-13, indicating renewed buyer interest and a potential shift in short-term momentum for a multi-week upward swing.",
-      "sources": "1. Significant technical price reversal ($7 increase) from the recent bottom at $352.51.\n2. The recent low around $352.51 appears to be acting as short-term support where buyers stepped in aggressively."
+      "analysis": "The stock has exhibited strong upward momentum over the past two trading days, significantly breaking above recent resistance levels. This indicates increasing buying pressure and suggests a potential continuation of an upward trend for a multi-week swing trade.",
+      "sources": "Strong technical breakout above recent highs; potential shift in market sentiment towards GOOGL following a brief pullback."
     },
     {
       "ticker": "AMZN",
-      "price": "247.49",
-      "pct_change": "+1.59%",
+      "price": "254.96",
+      "pct_change": "+3.21%",
       "action": "BUY",
-      "analysis": "AMZN has displayed consistent upward momentum over the last five trading days, making higher lows and higher highs, and closing at the highest price in this period.",
-      "sources": "1.  Short-Term Bullish Momentum: The stock is showing strength by consistently climbing and finishing at its 5-day high, indicating buyer conviction.\n2.  Uptrend Formation: The price action forms a clear upward channel within the given data, suggesting a potential continuation for a multi-week swing."
+      "analysis": "The stock has shown a strong upward breakout today, moving significantly higher after several days of consolidation, indicating robust buying interest and bullish momentum.",
+      "sources": "Significant price jump on 07-15 from $247.49 to $254.96; Technical breakout from a recent trading range."
     },
     {
       "ticker": "META",
-      "price": "661.04",
-      "pct_change": "+9.60%",
+      "price": "681.31",
+      "pct_change": "+7.89%",
       "action": "BUY",
-      "analysis": "The stock has exhibited strong bullish momentum with a significant rally over the past week, and the recent minor pullback was quickly met with renewed buying interest, suggesting continued upward potential.",
-      "sources": "1.  Strong Upward Trend: The price surged from $603.12 to $669.21 in just three trading days, indicating robust buying pressure.\n2.  Bullish Continuation Signal: The subsequent shallow consolidation from $669.21 to $656.73 followed by an immediate bounce to $661.04 suggests that dips are being bought, signaling potential for further upward movement."
+      "analysis": "The stock has demonstrated strong upward momentum over the last five days, culminating in a close at its 5-day high, indicating bullish sentiment suitable for a multi-week swing trade.",
+      "sources": "1) Strong upward price momentum and a breakout to a 5-day high. 2) Implied positive investor sentiment driving recent buying activity."
     },
     {
       "ticker": "MU",
-      "price": "983.12",
-      "pct_change": "+3.62%",
-      "action": "BUY",
-      "analysis": "The stock demonstrated a strong bullish rebound from its recent low, indicating robust buying interest and potential for continued upward momentum to challenge or surpass its previous high over a multi-week period.",
-      "sources": "1.  Technical Reversal/Momentum: The significant ~4.9% recovery from $937.00 to $983.12 in one day indicates strong buying pressure, suggesting a potential short-term bottom and renewed bullish sentiment.\n2.  Implied Demand at Dip: The aggressive buying after the drop to $937.00 signals that market participants viewed the pullback as a buying opportunity, reinforcing potential for further upward movement."
+      "price": "904.28",
+      "pct_change": "-8.81%",
+      "action": "SELL",
+      "analysis": "The stock experienced a significant one-day drop to a 5-day low, indicating strong bearish momentum and a clear rejection of the previous day's rebound, suggesting further downside potential for a multi-week swing.",
+      "sources": "1.  Breakdown of recent support: The price of $904.28 is the lowest in the last five trading days, signaling a loss of short-term support.\n2.  Bearish price action: The sharp approximately 8% decline on 07-15 negated the previous day's gains, indicating strong selling pressure likely to continue."
     }
   ],
   "trending": [
     {
-      "ticker": "CRWD",
-      "price": "210.73",
-      "pct_change": "+10.26%",
+      "ticker": "COIN",
+      "price": "167.21",
+      "pct_change": "+5.54%",
       "action": "BUY",
-      "analysis": "CRWD exhibited strong bullish momentum with a significant single-day price surge on 07-14, indicating robust buying interest and a potential breakout above recent consolidation. This upward momentum could be the start of a multi-week swing.",
-      "sources": "Strong bullish momentum (over 12% gain on 07-14), potential technical breakout from recent price action."
-    },
-    {
-      "ticker": "AMD",
-      "price": "548.13",
-      "pct_change": "+5.94%",
-      "action": "BUY",
-      "analysis": "AMD has shown a strong rebound after a healthy pullback from its recent peak, indicating renewed buying interest and potential to retest higher levels for a multi-week swing.",
-      "sources": "1.  Technical Rebound: The stock's bounce from $534.39 to $548.13 suggests that buyers stepped in after profit-taking, confirming support and bullish intent.\n2.  Momentum Towards Recent Highs: The current price is recovering towards the recent high of $557.89, indicating potential to retest or break this resistance in the near term."
-    },
-    {
-      "ticker": "SNOW",
-      "price": "275.94",
-      "pct_change": "+5.60%",
-      "action": "BUY",
-      "analysis": "The stock has demonstrated strong upward momentum over the last two trading days, closing at a new high for the provided period, indicating bullish sentiment.",
-      "sources": "Recent price action showing consecutive daily gains; Breakout above prior resistance levels within the 5-day period."
+      "analysis": "The stock has demonstrated strong upward momentum over the last two trading days, breaking out to a new high within the provided period, indicating increasing demand.",
+      "sources": "1. Continued bullish sentiment and price appreciation in the broader cryptocurrency market, particularly Bitcoin. 2. A potential technical breakout above its recent short-term trading range, suggesting further upward movement could be imminent."
     },
     {
       "ticker": "NVDA",
-      "price": "211.80",
-      "pct_change": "+3.76%",
-      "action": "HOLD",
-      "analysis": "The recent price history shows significant volatility with both sharp gains and losses within a 5-day period, failing to establish a clear, sustained directional trend suitable for a multi-week swing trade.",
-      "sources": "The pattern of sharp increases immediately followed by significant retracements (e.g., July 10th to 13th) indicates a lack of conviction for a prolonged upward or downward move, warranting observation for clearer trend confirmation."
+      "price": "212.50",
+      "pct_change": "+4.79%",
+      "action": "BUY",
+      "analysis": "The stock has demonstrated strong bullish momentum by recovering from a mid-week dip and closing at a 5-day high, suggesting potential for continued upward movement.",
+      "sources": "1.  Bullish Price Action: The consistent higher closes over the last two trading days ($203.53 -> $211.80 -> $212.50) indicate robust buying interest and upward momentum.\n2.  Breakout Signal: The price has surpassed previous resistance levels seen earlier in the week, closing at a new high within the given period, which can signal a continuation of the upward trend."
     },
     {
-      "ticker": "COIN",
-      "price": "161.50",
-      "pct_change": "+1.34%",
+      "ticker": "CRWD",
+      "price": "206.77",
+      "pct_change": "+4.22%",
       "action": "BUY",
-      "analysis": "COIN demonstrated a strong bullish rebound today, closing at $161.50, which is the highest price in the last five days and a significant reversal from the recent dip, indicating potential upward momentum.",
-      "sources": "1.  Technical Reversal: The stock's strong bounce from $157.37 to $161.50 on the last day suggests a potential technical reversal and a break above recent short-term price resistance.\n2.  Emerging Upward Momentum: The closing price marks a new 5-day high, signaling a shift in market sentiment and potential for continued upward price action over the multi-week horizon."
+      "analysis": "The stock has shown strong upward momentum, bouncing significantly from a recent dip, indicating aggressive buying interest and a potential for continued recovery and upside in the coming weeks.",
+      "sources": "1. Strong technical reversal pattern evidenced by the significant recovery from the 07-10 low. 2. Positive momentum indicated by aggressive buying that absorbed the recent price dip, setting up for a potential test of new highs."
+    },
+    {
+      "ticker": "PLTR",
+      "price": "133.76",
+      "pct_change": "+3.66%",
+      "action": "BUY",
+      "analysis": "The stock has shown strong upward momentum over the past few days, recovering from a dip and consolidating near its 5-day high, indicating sustained bullish interest.",
+      "sources": "1.  Recent Price Action: Strong upward move from $126.79 on 07-10 to $133.72 on 07-14, demonstrating significant buying pressure.\n2.  Consolidation at Highs: The price held steady at $133.76 on 07-15, suggesting continued buyer support and a potential base for further upward movement for a multi-week swing."
+    },
+    {
+      "ticker": "SNOW",
+      "price": "271.87",
+      "pct_change": "+1.64%",
+      "action": "BUY",
+      "analysis": "SNOW has displayed strong upward momentum over the past few trading days, and the recent slight pullback on 07-15 could represent a healthy consolidation, offering an attractive entry for continued bullish movement.",
+      "sources": "Recent upward price trend ($261.45 to $275.94) and short-term consolidation after a rally."
     }
   ]
 }
