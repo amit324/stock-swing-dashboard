@@ -1,95 +1,95 @@
 {
-  "last_updated": "2026-07-28 22:04:05 UTC",
+  "last_updated": "2026-07-29 22:00:25 UTC",
   "watchlist": [
     {
       "ticker": "AAPL",
-      "price": "340.08",
-      "pct_change": "+4.35%",
+      "price": "338.19",
+      "pct_change": "+5.14%",
       "action": "BUY",
-      "analysis": "The stock has demonstrated strong upward momentum over the past four trading days, indicating a bullish short-term trend suitable for a multi-week swing trade.",
-      "sources": "Consistent positive technical trend with consecutive higher closes; anticipation surrounding the upcoming earnings report, which often acts as a significant catalyst."
+      "analysis": "AAPL has demonstrated strong bullish momentum over the past few trading days with consistent price increases, and the recent minor pullback offers a potential entry point for a multi-week swing trade anticipating further gains.",
+      "sources": "1.  Established Uptrend: The recent price history clearly shows strong upward movement, indicating significant buying interest and a short-term bullish trend.\n2.  Anticipated Earnings Catalyst: Apple's quarterly earnings report is typically released around this time, which often acts as a significant catalyst for the stock, potentially fueling further positive price action."
     },
     {
       "ticker": "MSFT",
-      "price": "393.35",
-      "pct_change": "+0.77%",
+      "price": "390.54",
+      "pct_change": "+2.35%",
       "action": "BUY",
-      "analysis": "The stock has demonstrated a strong V-shaped recovery over the past two trading days, pushing above its recent high from July 22nd, indicating renewed buying interest and positive short-term momentum for a multi-week swing.",
-      "sources": "1. Continued strong sentiment surrounding AI innovation and robust cloud demand for Microsoft's Azure services. 2. General positive momentum within the tech sector, providing tailwinds for leading growth stocks like MSFT."
+      "analysis": "MSFT has demonstrated strong upward momentum over the past few trading days. The recent minor pullback from its high could be a healthy consolidation, presenting an opportunity to enter an existing uptrend for a multi-week swing trade.",
+      "sources": "1.  Persistent AI & Cloud Demand: Continued strong performance and investor confidence in Microsoft's leading AI initiatives and robust Azure cloud growth.\n2.  Positive Market Sentiment for Tech: A favorable broader market environment for large-cap technology stocks often provides tailwinds for MSFT."
     },
     {
       "ticker": "GOOGL",
-      "price": "333.71",
-      "pct_change": "-2.45%",
+      "price": "336.71",
+      "pct_change": "+5.99%",
       "action": "BUY",
-      "analysis": "GOOGL has shown a consistent rebound over the past three trading days following a sharp decline, indicating building positive momentum for a potential multi-week recovery.",
-      "sources": "1.  Positive Price Momentum: Consistent daily price increases observed over the last three trading sessions.\n2.  Recovery from Recent Dip: The stock is actively recovering from a significant pullback, suggesting potential to retest prior price levels."
+      "analysis": "GOOGL has exhibited strong and consistent upward momentum over the past five trading days, with each day's closing price higher than the previous, indicating robust buying interest for a potential multi-week swing.",
+      "sources": "1.  Strong Bullish Momentum: The consecutive higher closing prices clearly demonstrate a powerful short-term uptrend.\n2.  Technical Trend Confirmation: The consistent positive price action suggests a potential continuation of this upward trajectory for a swing trade."
     },
     {
       "ticker": "AMZN",
-      "price": "230.86",
-      "pct_change": "-5.71%",
-      "action": "SELL",
-      "analysis": "AMZN has shown a consistent and strong downtrend over the past five trading days, indicating significant bearish momentum that makes it unsuitable for initiating or maintaining a multi-week long swing trade.",
-      "sources": "Persistent bearish price action and a lack of identifiable short-term support levels based purely on the provided price history."
+      "price": "226.65",
+      "pct_change": "-3.00%",
+      "action": "HOLD",
+      "analysis": "The stock has been in a consistent downtrend for the past five days, including a significant drop on the last trading day, indicating strong selling pressure and making it an unfavorable entry point for initiating a multi-week long swing trade.",
+      "sources": "1.  Price Action/Technical Analysis: The clear and continuous 5-day downtrend (from $233.66 to $226.65), particularly the accelerated decline on the last trading day, signals strong bearish momentum and a lack of immediate support.\n2.  Risk Management for Swing Trading: Entering a long position (BUY) during a strong, sustained downtrend without any signs of reversal is considered \"catching a falling knife\" and is generally avoided by swing traders due to the heightened risk."
     },
     {
       "ticker": "META",
-      "price": "593.41",
-      "pct_change": "-5.38%",
-      "action": "HOLD",
-      "analysis": "The stock has been in a consistent downtrend over the last five trading days. While the daily rate of decline has slowed, there is no clear technical reversal signal from this limited data to justify initiating a new long position for a multi-week swing trade.",
-      "sources": "1.  Consistent Downtrend: The price has steadily decreased from $627.17 to $593.41 over the last five trading days, indicating sustained selling pressure.\n2.  Lack of Reversal Confirmation: Despite a deceleration in the daily price drop, there is no conclusive evidence of strong support or a bullish reversal in momentum based solely on this price history."
+      "price": "585.61",
+      "pct_change": "-3.38%",
+      "action": "SELL",
+      "analysis": "META is in a strong and persistent downtrend over the last five trading days, indicating significant bearish momentum suitable for a multi-week downward swing trade or to protect capital from further declines.",
+      "sources": "Consistent daily price depreciation from $606.10 to $585.61; absence of any technical support levels or bullish reversal patterns within the provided data."
     },
     {
       "ticker": "MU",
-      "price": "820.53",
-      "pct_change": "-14.48%",
+      "price": "739.00",
+      "pct_change": "-25.37%",
       "action": "SELL",
-      "analysis": "The stock has experienced a sharp and consistent multi-day decline, indicating significant selling pressure and strong negative momentum, which suggests further downside is likely in a multi-week timeframe.",
-      "sources": "Recent price breakdown over several consecutive trading days; Lack of immediate technical support or clear reversal signals."
+      "analysis": "The stock is experiencing a severe and uninterrupted downtrend, losing over 25% of its value in five days, indicating strong bearish momentum and a high probability of further downside.",
+      "sources": "1. Technical Analysis: The consistent daily price decline from $990.21 to $739.00 clearly signals overwhelming selling pressure and a complete lack of identifiable support levels for a potential long entry.\n2. Risk Management: Initiating or holding a long swing trade in a \"falling knife\" scenario, without any signs of stabilization or reversal, constitutes an extremely high-risk approach for capital preservation."
     }
   ],
   "trending": [
     {
       "ticker": "NFLX",
-      "price": "72.39",
-      "pct_change": "+5.63%",
+      "price": "73.63",
+      "pct_change": "+6.88%",
       "action": "BUY",
-      "analysis": "NFLX has shown strong and consistent upward momentum over the past five trading days, culminating in a notable price surge on the most recent day. This sustained positive price action suggests increasing buying interest and potential for further appreciation in the multi-week swing trade horizon.",
-      "sources": "1.  Consistent Upward Price Action: The stock has closed higher for five consecutive trading days, demonstrating a clear short-term uptrend.\n2.  Increased Buying Interest: The significant jump from $70.40 to $72.39 on the latest day indicates strong positive sentiment and increased demand."
-    },
-    {
-      "ticker": "COIN",
-      "price": "167.90",
-      "pct_change": "+1.07%",
-      "action": "BUY",
-      "analysis": "The stock has demonstrated a strong rebound from its recent low of $158.29, closing higher for two consecutive days and showing renewed buying interest after a brief pullback. This indicates a potential shift in short-term momentum for a multi-week swing trade.",
-      "sources": "1.  Technical Reversal Pattern: The sharp bounce from the $158.29 low, followed by two consecutive higher closes, suggests a short-term bottom has been established and buying pressure is returning.\n2.  Broader Cryptocurrency Market Sentiment: COIN's performance is highly correlated with the overall health and sentiment of the cryptocurrency market, which could be experiencing renewed strength and driving demand for crypto-related assets."
+      "analysis": "The stock has shown a consistent upward trend over the last five trading days, indicating strong bullish momentum. This positive price action suggests potential for further appreciation in the coming weeks.",
+      "sources": "1.  Consecutive Higher Closes: NFLX has closed higher for five straight trading days, demonstrating sustained buying pressure.\n2.  Short-Term Bullish Momentum: The steady price increase indicates building positive momentum, often preceding further gains in a multi-week swing."
     },
     {
       "ticker": "SNOW",
-      "price": "270.36",
-      "pct_change": "+0.96%",
+      "price": "282.90",
+      "pct_change": "+6.70%",
       "action": "BUY",
-      "analysis": "The stock demonstrated notable upward momentum on 07-27 and is currently experiencing a minor pullback, which could present a favorable entry point for an anticipated continued ascent.",
-      "sources": "1. Recent Strong Price Appreciation: The significant move from $268.06 to $272.92 on 07-27 suggests renewed bullish interest.\n2. Minor Retracement: The current price of $270.36 represents a slight consolidation from the previous day's high, indicating potential for the uptrend to resume."
+      "analysis": "SNOW has shown strong upward momentum over the last five trading days, culminating in a significant price jump, indicating bullish sentiment and potential for further appreciation.",
+      "sources": "Recent strong buying momentum and potential for a technical breakout above prior resistance levels."
     },
     {
       "ticker": "UBER",
-      "price": "70.74",
-      "pct_change": "+0.58%",
+      "price": "71.20",
+      "pct_change": "+3.32%",
       "action": "BUY",
-      "analysis": "UBER has shown a strong two-day rebound after a significant dip, with the current price exceeding its initial level within the observed period, indicating renewed buying interest and bullish momentum.",
-      "sources": "Technical Rebound from $65.94 low; Short-term momentum shift confirmed by successive higher closes."
+      "analysis": "UBER has demonstrated strong upward momentum over the last three trading days, successfully recovering from a previous dip and breaking into new short-term highs, which suggests continued bullish interest.",
+      "sources": "1.  Technical Momentum: The consistent higher closes and the breakout above the 07-23 high of $68.91 to $71.20 indicates growing buying pressure and a potential upward trend continuation.\n2.  Recovery from Dip: The strong bounce back from the 07-24 low of $65.94 demonstrates resilience and investor confidence in the stock's underlying value."
     },
     {
       "ticker": "PLTR",
-      "price": "123.53",
-      "pct_change": "-0.83%",
+      "price": "123.00",
+      "pct_change": "-0.30%",
       "action": "HOLD",
-      "analysis": "The significant price surge on 07-27 was almost entirely reversed on 07-28, indicating strong selling pressure and a failure to sustain higher prices. This price action suggests a lack of clear upward momentum for a multi-week swing trade.",
-      "sources": "1. Technical analysis of the \"failed breakout\" pattern, where an upward move is quickly negated, often signaling weakness or indecision. 2. Extreme volatility and immediate retracement, which suggests the stock is currently in a consolidation phase or subject to profit-taking, lacking a clear directional trend for a sustained swing trade."
+      "analysis": "The stock experienced a significant price spike that was immediately and almost entirely retraced, indicating a strong rejection of higher prices and a lack of sustained buying interest. This \"spike and fade\" pattern suggests a failure to break out, making it risky to initiate a new long position for a multi-week swing trade without clearer directional momentum.",
+      "sources": "1.  Price Action (Failed Breakout/Spike and Fade): The rapid rise to $131.53 followed by an immediate and nearly complete retracement back to prior levels ($123.00) signifies a lack of follow-through buying and strong selling pressure at higher prices.\n2.  Lack of Bullish Momentum: The stock has returned to its pre-spike levels, suggesting that any positive catalyst was short-lived or insufficient to establish a sustainable uptrend for a multi-week trade."
+    },
+    {
+      "ticker": "COIN",
+      "price": "160.09",
+      "pct_change": "-0.66%",
+      "action": "HOLD",
+      "analysis": "The stock experienced a significant price drop today after failing to sustain its mid-week rally, indicating increased volatility and a lack of clear directional momentum for a multi-week swing trade at this exact moment.",
+      "sources": "1. Volatility & Reversal: The sharp decline from $167.90 to $160.09 on 07-29 suggests increased selling pressure and a potential for further price discovery or consolidation.\n2. Indecision: The price action shows a failure to maintain recent gains, indicating investor indecision and making a clear long or short swing entry less apparent for a multi-week horizon."
     }
   ]
 }
