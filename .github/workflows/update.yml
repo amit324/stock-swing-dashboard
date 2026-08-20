@@ -1,9 +1,9 @@
 name: Daily Stock Analysis
 
 on:
-  schedule:
+  #schedule:
     # Run at 21:00 UTC (After US market close) on weekdays
-    - cron: '0 21 * * 1-5'
+    #- cron: '0 21 * * 1-5'
   workflow_dispatch: # Allow manual triggers
   push:
     paths:
